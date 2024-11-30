@@ -69,15 +69,50 @@ h1, h2 {
 
 /* Buttons */
 .hover-fill-button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(1, 114, 206); /* Text color */
+  background-color: transparent; /* Background starts transparent */
+  border: 2px solid rgb(1, 114, 206); /* Button border */
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer;
+  overflow: hidden; /* Prevent content from overflowing */
+  transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.hover-fill-button::before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start fill outside the button */
   width: 100%;
-  max-width: 300px;
-  height: 50px;
-  margin: 10px auto;
+  height: 100%;
+  background-color: rgb(1, 114, 206); /* Fill color */
+  z-index: 0; /* Place below the text */
+  transition: left 0.5s ease; /* Smooth sliding effect */
+}
+
+.hover-fill-button:hover::before {
+  left: 0; /* Slide fill color into view */
+}
+
+.hover-fill-button:hover {
+  color: #fff; /* Change text color to white on hover */
 }
 
 .hover-fill-button span {
-  display: block;
+  position: relative;
+  z-index: 1; /* Keep text above the background fill */
 }
+
 
 /* Profile and Content Blocks */
 .contentfull, .cert-block-1, .cert-block-2, .project-block-1, .footer-block {
