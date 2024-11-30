@@ -1,23 +1,8 @@
-/* use percentage not px */
+/* General Styling */
 :root {
-  --font-style1: Georgia;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  --border-black: rgb(231, 231, 231);
-  --shadow-black: rgb(199, 199, 199);
-}
-.imgflex{
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-}
-.imgflex2{
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-around;
-}
-h1{
-  text-align: center;
-  font-size: 35rem;
+  --font-style1: Georgia, 'Times New Roman', Times, serif;
+  --border-color: #e7e7e7;
+  --shadow-color: #c7c7c7;
 }
 
 * {
@@ -27,185 +12,86 @@ h1{
   font-family: var(--font-style1);
 }
 
-
-.contentfull {
-  margin: 3%;
-  background-color: #ffffffd0;
-  width: 95%;
-  height: 90vh;
-  border-radius: 15px;
-  border: 1px solid var(--border-black);
-  
-  box-shadow: 5px 5px 5px var(--shadow-black);
-}
-.contentfull h2{
-  color: #12003b;
-  text-align: center;
-}
-.footer-block {
-  margin: 3%;
-  background-color: #ffffffd0;
-  width: 95%;
-  height: 50vh;
-  border-radius: 15px;
-  border: 1px solid var(--border-black);
-  
-  box-shadow: 5px 5px 5px var(--shadow-black);
-}
-.cert-block-1 {
-  margin: 3%;
-  background-color: #ffffffd0;
-  width: 95%;
-  height: 120vh;
-  border-radius: 15px;
-  border: 1px solid var(--border-black);
-  
-  box-shadow: 5px 5px 5px var(--shadow-black);
-}
-.cert-block-1 h2{
-  color: #140042;
-  text-align: center;
-}
-.cert-block-2 {
-  margin: 3%;
-  background-color: #ffffffd0;
-  width: 95%;
-  height: 90vh;
-  border-radius: 15px;
-  border: 1px solid var(--border-black);
-  
-  box-shadow: 5px 5px 5px var(--shadow-black);
-}
-.cert-block-2 h2{
-  color: #601cff;
-  text-align: center;
-}
-.project-block-1 {
-  margin: 3%;
-  background-color: #ffffffd0;
-  width: 95%;
-  height: 100vh;
-  border-radius: 15px;
-  border: 1px solid var(--border-black);
-  
-  box-shadow: 5px 5px 5px var(--shadow-black);
-}
-.project-block-1 h2{
-  color: #601cff;
-  text-align: center;
-}
-
-/* card hover effect */
-.card {
-  background-color: white;
-  border: 1px solid var(--border-black);
-  box-shadow: 5px 5px 5px var(--shadow-black);
-  margin: 5px;
-  padding: 5px;
-  width: 100%;
-  height: 250px;
+/* Flexbox Utilities */
+.imgflex, .imgflex2 {
   display: flex;
-  align-items: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px); /* Moves 3px upwards */
-  box-shadow: 10px 10px 10px var(--shadow-black); /* Enhance shadow for effect */
+  transform: translateY(-3px);
+  box-shadow: 10px 10px 20px var(--shadow-color);
 }
 
-/* footer */
-/* Footer styling */
-.footer {
-  position: static;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid var(--border-black);
-  background-color: #ffffff;
-  color: #000000;
-  margin-top: 5px;
-  padding-top: 0;
-  box-shadow: 5px 5px 5px black;
+/* Header and Footer Styling */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Section styling */
 .footer-section {
   flex: 1 1 200px;
-  margin: 10px;
   text-align: center;
 }
 
-.footer-section h2 {
-  font-size: 2rem;
-  color: #2927a0;
-  margin-bottom: 15px;
-}
-
-.footer-section p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
 .footer-section ul li {
-  margin: 8px 0;
+  margin: 5px 0;
+  list-style-type: none;
+}
+.footer-section ul {
+  /* margin: 5px 0; */
+  list-style-type: none;
 }
 
 .footer-section ul li a {
-  color: #000000;
+  color: #0074e2;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .footer-section ul li a:hover {
-  color: #002fff;
-  text-decoration: underline;
+  color: #003aff;
 }
 
-
-/* Responsive layout */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-
+/* Buttons */
+.hover-fill-button {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  margin: 10px auto;
 }
 
-.heading{
-  background-color: rgb(216, 216, 216);
-  border: 1px solid var(--border-black);
-  box-shadow: 5px 5px 5px var(--shadow-black);
-  
-  
-  width: 70%;
+.hover-fill-button span {
+  display: block;
 }
 
-/* Add this style for profile image */
+/* Profile and Content Blocks */
+.contentfull, .cert-block-1, .cert-block-2, .project-block-1, .footer-block {
+  margin: 3%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px var(--shadow-color);
+}
+
 img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 img.rounded-circle {
@@ -213,97 +99,42 @@ img.rounded-circle {
   margin-bottom: 20px;
 }
 
-/* Styling for About Section */
 h2 {
-  font-size: 2rem;
-  color: #1714a5;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Button Styling */
-.btn-primary {
-  background-color: #006be6;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-
-.btn-primary:hover {
-  background-color: #0051c2;
-  text-decoration: none;
-}
-
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .maindisplay {
-      flex-direction: column;
-      align-items: center;
+  .imgflex, .imgflex2 {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .contentfull {
-      width: 90%;
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .row {
-      flex-direction: column;
-      text-align: center;
+  .footer-section {
+    margin-bottom: 15px;
   }
 
-  .col-md-4, .col-md-6 {
-      width: 100%;
+  .contentfull, .cert-block-1, .cert-block-2, .project-block-1, .footer-block {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
 
-.hover-fill-button {
-  text-decoration: none; /* Removes the underline */
-  text-align: center;
-  width: 250px;
-  height: 50px;
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgb(1, 114, 206); /* Initially visible text color */
-  background-color: transparent;
-  border: 2px solid rgb(1, 114, 206); /* Border for the button */
-  border-radius: 5px;
-  cursor: pointer;
-  transition: color 0.3s ease; /* Smooth transition for text color */
-}
+  p {
+    font-size: 0.9rem;
+  }
 
-.hover-fill-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 100%; /* Start outside on the left */
-  bottom: 0;
-  left: 0;
-  background-color: rgb(1, 114, 206); /* Fill color */
-  z-index: 0;
-  transition: right 0.5s ease; /* Smooth animation */
-}
-
-.hover-fill-button:hover::before {
-  right: 0; /* Move the fill color into view */
-}
-
-.hover-fill-button:hover {
-  color: rgb(255, 255, 255); /* Change text color to white on hover */
-}
-
-.hover-fill-button span {
-  position: relative;
-  z-index: 1; /* Keep text above the background fill */
+  .hover-fill-button {
+    font-size: 0.8rem;
+  }
 }
