@@ -11,29 +11,66 @@
 </head>
 
 <body style="background-color: rgb(230, 229, 229);">
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>View In pc or laptop </strong> 
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn"><a class="nav-link" href="#certs"
+                                style="font-size: larger;">Certifications</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn"><a class="nav-link" href="#projects"
+                                style="font-size: larger;">Project</a></button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="btn"><a class="nav-link" href="#skills"
+                                style="font-size: larger;">Skills</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn"><a class="nav-link" href="#profiles"
+                                style="font-size: larger;">Profiles</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn"><a class="nav-link" href="#contact"
+                                style="font-size: larger;">Contact</a></button>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- scroll up button -->
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+
     <!-- Main Content -->
 
-    <div class="contentfull ">
+    <div class="contentfull " id="about">
         <div class="row justify-content-center">
             <!-- Profile Image -->
             <div class="col-md-4 mt-5">
-                <img src="myPhoto/photo.png" alt="Profile Picture" class="img-fluid rounded-circle"
-                    style="border:2px solid rgb(199, 199, 199);">
-                <!-- <p class="text-center"
-                    style="color: rgb(0, 0, 0);font-size: 35px;font-family: Georgia, 'Times New Roman', Times, serif;">
-                    Open To Work</p> -->
+                <img src="myPhoto/photo blue.png" alt="Profile Picture" class="img-fluid rounded-circle"
+                    style="box-shadow: 15px 15px 15px gray;">
             </div>
             <!-- About Section -->
             <div class="col-md-6 mt-5">
                 <h2>Hi, I'm Sohan D J</h2>
-                <p>Welcome to my portfolio website! I'm a passionate Computer Science Engineering student with a keen interest in software development, cybersecurity, and problem-solving. Here, you’ll find my projects, certifications, and achievements that showcase my technical skills and dedication. I'm completing my B.E in Computer Science at Kalpataru Institute of Technology ,Tiptur under VTU.</p>
+                <p>Welcome to my portfolio website! I'm a passionate Computer Science Engineering student with a keen
+                    interest in software development, cybersecurity, and problem-solving. Here, you’ll find my projects,
+                    certifications, and achievements that showcase my technical skills and dedication. I'm pursing my
+                    B.E in Computer Science at Kalpataru Institute of Technology ,Tiptur under VTU.</p>
                 <hr>
-                <h4><i>Cyber Security Enthusiast</i></h4>
-                
+                <h4><i>Career Objective</i></h4>
+
                 <p>Aspiring Cyber security enthusiast with a strong foundation in computer science and a passion for
                     protecting digital assets against evolving threats. Seeking a challenging role where I can leverage
                     my skills in network security, threat analysis, and incident response to safeguard organizational
@@ -45,76 +82,108 @@
                         href="https://drive.google.com/file/d/1th-nTz12Fzo86aLNMNJ55GiE1dFk2-LK/view"><span>View
                             Resume</span></a>
                 </div>
-                <!-- Download Button -->
             </div>
+        </div>
+    </div>
+    <div class="cert-main">
+        <h1 class="text-center" style="color: rgb(3, 76, 185);">Certifications</h1>
+        <div class="flex-list">
+            <a href="#ctf">Digital Defenders CTF 2023 Master Class</a>
+            <a href="#cysec">Cyber Security</a>
+            <a href="#webdev">Web development</a>
         </div>
     </div>
 
 
-    <div class="cert-block-1">
-        <h1>Certifications</h1>
-        <h2 class="mt-3">Digital Defenders CTF 2023 Master Class </h2>
+    <div class="cert-block-1" id="certs">
+
+        <h2 class="mt-3" id="ctf">Digital Defenders CTF 2023 Master Class </h2>
         <hr>
-        <div class="container imgflex">
-            <div class="card" style="width: 18rem;">
-                <img src="images/W1 Network analysis and tools.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Network Analysis and Tools</strong></p>
+        <div id="carouselctf" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselctf" data-bs-slide-to="5" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/W1 Network analysis and tools.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/W3 Web Security and Penetration Testing.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/W4 Web security and pen testing part2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/W5 Forensics part 1 .png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/W7 Cryptography part 1 .png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/W8 Cryptography part 2 .png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/W3 Web Security and Penetration Testing.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Web Security and Penetration Testing</strong> Part 1</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/W4 Web security and pen testing part2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Web Security and Penetration Testing</strong> Part 2</p>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselctf" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselctf" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <div class="container imgflex mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images/W5 Forensics part 1 .png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Forensics</strong> Part 1</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/W7 Cryptography part 1 .png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Cryptography</strong> Part 1</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/W8 Cryptography part 2 .png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Cryptography</strong> Part 2</p>
-                </div>
-            </div>
-        </div>
+        <hr>
     </div>
 
-    <div class="cert-block-2 ">
+    <div class="cert-block-2 " id="cysec">
         <h2 class="mt-3">Cyber Security</h2>
         <hr>
-        <div class="container imgflex2 mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images/Cyber security analyst job simulation.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Cyber security analyst job simulation</strong></p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/Cyber Security Teachnook.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Cryptography</strong> Part 1</p>
-                </div>
-            </div>
+        <div id="carouselcyber" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselcyber" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselcyber" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
 
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/Cyber security analyst job simulation.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/Cyber Security Teachnook.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselcyber" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselcyber" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <div style="display: flex;justify-content: center;" class="mt-5">
             <a class="hover-fill-button" target="_blank"
@@ -123,72 +192,250 @@
         </div>
     </div>
 
+    <div class="project-main">
+        <h1 class="text-center" style="color: rgb(3, 76, 185);">Projects</h1>
+        <div class="flex-list">
+            <a href="#tdf">Technical Discussion Forum</a>
+            <a href="#ibad">Integrated business Analyst Dashboard</a>
+        </div>
+    </div>
 
-    <div class="project-block-1">
-        <h1>Projects</h1>
-        <h2>My Portfolio Website </h2>
+    <div class="project-block-1 " id="tdf">
+        <h2>Technical Discussion Forum </h2>
         <hr>
-        <div style="margin: 2%;">
-            <img src="images/p1-i1.png" alt="" width="900" height="800">
-            <p>Developed a responsive portfolio website to showcase personal projects , certifications and  technical skills.Integrated a clean, user-friendly design with smooth navigation and mobile responsiveness.Deployed the website using GitHub Pages and ensured high performance through optimization techniques.</p>
+        <div id="carouselforum" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselforum" data-bs-slide-to="7"
+                    aria-label="Slide 1"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="projectImgs/forum-1 home .png" class="d-block w-100" alt="1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="projectImgs/python forum.png" class="d-block w-100" alt=".2..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="projectImgs/multiple discussion.png" class="d-block w-100" alt="..3.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="projectImgs/mp comment.png" class="d-block w-100" alt=".4..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="projectImgs/forum-3 threads .png" class="d-block w-100" alt=".5..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="projectImgs/forum-4 about.png" class="d-block w-100" alt="..6.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="projectImgs/forum-5 developer contact .png" class="d-block w-100" alt="..7.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselforum" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselforum" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="margin: 5%;" class="text-center">
+            <h3>Project Guide : <strong>Dr.Raviprakash M L</strong></h3>
+            <h5><strong>HOD of AIML </strong>at Kalpataru Institute of Technology, Tiptur</h5>
+            <p class="container">Designed and developed an interactive discussion forum platform enabling users to
+                create, share, and engage in discussions on various topics. Utilized HTML, CSS, JavaScript for the front
+                end, and PHP for the backend. Integrated a MySQL database for efficient data management, supporting
+                features such as chat room or post creation, and multiple comments for each question raised.
+            </p>
+
+        </div>
+    </div>
+    <div class="project-block-1 " id="ibad">
+        <h2>Integrated business Analyst Dashboard</h2>
+        <hr>
+        <div id="carouselpowerbi" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselpowerbi" data-bs-slide-to="7"
+                    aria-label="Slide 1"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="power bi/Screenshot (85).png" class="d-block w-100" alt="1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="power bi/Screenshot (86).png" class="d-block w-100" alt=".2..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="power bi/Screenshot (87).png" class="d-block w-100" alt="..3.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="power bi/Screenshot (88).png" class="d-block w-100" alt=".4..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="power bi/Screenshot (89).png" class="d-block w-100" alt=".5..">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="power bi/Screenshot (90).png" class="d-block w-100" alt="..6.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="power bi/Screenshot (91).png" class="d-block w-100" alt="..7.">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselpowerbi" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselpowerbi" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="margin: 5%;" class="text-center">
+            <h3>Project Guide : <strong>Prof. Deepika G L</strong></h3>
+            <h5><strong>Assistant Professor </strong>at Kalpataru Institute of Technology, Tiptur</h5>
+            <p class="container">Developed using Power BI to provide real-time insights and analytics by
+                consolidating data from various sources, featuring dynamic visualizations. We also
+                won 2nd Prize at Mini-Project Exhibition at our collage (Kalpataru Institute of
+                Technology, Tiptur)
+            </p>
+            <div class="container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="power bi/Award.jpeg" class="d-block w-100" alt="..." style="height: 500px;width:600px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="power bi/Sohan DJ.jpeg" class="d-block w-100" alt="..." style="height: 500px;width:600px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="power bi/Ebinesh.jpeg" class="d-block w-100" alt="..." style="height: 500px;width:600px;">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="skills-main" id="skills">
+        <h1 class="text-center" style="color: rgb(3, 76, 185);">Skills</h1>
+        <hr>
+        <div class="flex-list space">
+            <p>Java</p>
+            <p>Python</p>
+            <p> C </p>
+            <p>JavaScript</p>
+            <p>PHP</p>
+        </div>
+        <div class="flex-list space">
+            <p>Kali Linux</p>
+            <p>Oracle Virtual Box</p>
+            <p>Wireshark</p>
         </div>
     </div>
 
 
-    <!-- footer -->
-    <div class="footer-block">
-        <h1 style="color: rgb(0, 0, 151);font-size: 35px;">Summary</h1>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Virtual Machine</li>
-                    <li>Kali Linux OS</li>
-                    <li>Black Arc</li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h2>Profiles</h2>
-                <ul>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/sohan-dj-70956a228/">LinkedIn</a></li>
-                    <li><a target="_blank" href="https://www.hackerrank.com/profile/shivasohandj">HackerRank</a>
-                    </li>
-                    <li><a target="_blank" href="https://github.com/sohandj">Github</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h2>Projects</h2>
-                <ul>
-                    <li>Discussion Forum</li>
-                    <li>Integrated Business Analyst Dashboard</li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h2>Contact</h2>
-                <ul>
-                    <li style="font-family: 'Times New Roman', Times, serif;">Phone: +91 8762767042</li>
-                    <li><a target="_blank" href="mailto:shivasohandj@gmail.com">Email: shivasohandj@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="skills-main" id="profiles">
+        <h1 class="text-center" style="color: rgb(3, 76, 185);">Profiles</h1>
+        <hr>
+        <div class="flex-list">
+            <a href="">LinkedIn</a>
+            <a href="">Hacker Rank</a>
+            <a href="">GitHub</a>
         </div>
     </div>
-    <footer class="footer">
-
-    </footer>
+    <div class="skills-main" id="contact">
+        <h1 class="text-center" style="color: rgb(3, 76, 185);">Contact</h1>
+        <hr>
+        <div class="flex-list">
+            <p>Phone no : +91 872767042</p>
+            <p>Email ID : shivasohandj@gmail.com</p>
+        </div>
+    </div>
 
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
